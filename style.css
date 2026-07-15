@@ -1,0 +1,230 @@
+:root {
+
+--navy:#07182E;
+--gold:#C2A36A;
+--paper:#F3ECDD;
+--black:#0B0B0B;
+
+}
+
+* {
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+body {
+
+background:var(--navy);
+font-family:'Inter',sans-serif;
+color:white;
+
+}
+
+.header {
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:30px 60px;
+
+z-index:1000;
+
+}
+
+.header nav {
+
+display:flex;
+gap:40px;
+
+}
+
+.header nav a {
+
+text-decoration:none;
+color:var(--gold);
+
+font-size:14px;
+letter-spacing:2px;
+text-transform:uppercase;
+
+}
+
+.logo {
+
+font-size:28px;
+color:var(--gold);
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+.hero {
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+background:
+
+linear-gradient(
+rgba(4,12,24,.6),
+rgba(4,12,24,.85)
+),
+
+url("img/hero-egypt.jpg");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.hero-content {
+
+max-width:900px;
+
+}
+
+.hero h1 {
+
+font-size:120px;
+
+font-family:'Cormorant Garamond',serif;
+
+font-weight:500;
+
+letter-spacing:12px;
+
+margin-bottom:20px;
+
+color:var(--gold);
+
+}
+
+.subtitle {
+
+font-size:28px;
+
+letter-spacing:4px;
+
+margin-bottom:30px;
+
+}
+
+.hero-line {
+
+width:120px;
+height:1px;
+
+background:var(--gold);
+
+margin:30px auto;
+
+}
+
+.details {
+
+font-size:14px;
+
+letter-spacing:3px;
+
+color:#d9c59f;
+
+margin-bottom:50px;
+
+}
+
+.archive-button {
+
+padding:18px 40px;
+
+border:1px solid var(--gold);
+
+text-decoration:none;
+
+color:var(--gold);
+
+transition:.3s;
+
+}
+
+.archive-button:hover {
+
+background:var(--gold);
+color:var(--navy);
+
+}
+
+.manifest {
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+background:var(--paper);
+
+color:#222;
+
+}
+
+.manifest-left {
+
+padding:120px;
+
+}
+
+.section-label {
+
+letter-spacing:3px;
+
+color:#8A6B3F;
+
+display:block;
+
+margin-bottom:30px;
+
+}
+
+.manifest h2 {
+
+font-size:58px;
+
+font-family:'Cormorant Garamond',serif;
+
+margin-bottom:40px;
+
+}
+
+.manifest p {
+
+font-size:18px;
+
+margin-bottom:20px;
+
+line-height:1.8;
+
+}
+
+.manifest-right img {
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+}
